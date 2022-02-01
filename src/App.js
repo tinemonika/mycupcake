@@ -1,26 +1,17 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import { client } from "./client";
 import NavBar from "./components/NavBar";
-import RecipeCards from "./components/RecipeCards";
+import RecipeOne from "./components/RecipeOne";
+import Welcome from "./components/Welcome";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [recipes, setRecipes] = useState();
-
-  useEffect(() => {
-    client
-      .getEntries()
-      .then((res) => {
-        setRecipes(res.items);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <>
       <NavBar />
-      <h1>Hello</h1>
-      {recipes ? <RecipeCards recipes={recipes} /> : "...Loading"}
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/:id" element={<RecipeOne />} />
+      </Routes>
     </>
   );
 }
