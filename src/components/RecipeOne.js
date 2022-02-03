@@ -1,3 +1,4 @@
+import "../App.css";
 import { useState, useEffect } from "react";
 import { client } from "../client";
 import { useParams } from "react-router-dom";
@@ -15,12 +16,34 @@ const RecipeOne = () => {
         setRecipe(res);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   return (
     <>
-      <div>Hallo</div>
-      {/* sobald recipe einen Wert hat (der fetch fertig ist), wollen wir alle Infos zum Rezept darstellen (zB recipe.fields.title als H1 usw), andernfalls wollen wir "Loading..." anzeigen */}
+      {recipe ? (
+        <div className="theOneRecipe">
+          <h1>{recipe.fields.headline}</h1>
+          <img alt="img" src={recipe.fields.img.fields.file.url} />
+          <h3>Zutaten:</h3>
+          <ul>
+            {recipe.fields.zutaten.content[0].content.map(
+              (ingredient, index) => (
+                <li key={index}>{ingredient.content[0].content[0].value}</li>
+              )
+            )}
+          </ul>
+          <h3>Zubereitung:</h3>
+          <p>{recipe.fields.preparation}</p>
+        </div>
+      ) : (
+        <div>
+          <img alt="img" scr="" />
+        </div>
+      )}
+
+      {/* sobald recipe einen Wert hat (der fetch fertig ist), 
+      wollen wir alle Infos zum Rezept darstellen (zB recipe.fields.headline als H1 usw), 
+      andernfalls wollen wir "Loading..." anzeigen */}
     </>
   );
 };

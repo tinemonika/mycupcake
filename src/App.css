@@ -1,0 +1,23 @@
+.theOneRecipe {
+  margin: 4rem;
+  border: 1px solid;
+}
+
+.theOneRecipe h1 {
+  border: 1px solid green;
+}
+
+.theOneRecipe img {
+  float: right;
+  width: 25rem;
+  border: 1px solid blue;
+}
+
+.theOneRecipe ul {
+  border: 1px solid rosybrown;
+  list-style-type: none;
+}
+
+.theOneRecipe p {
+  border: 1px solid red;
+}

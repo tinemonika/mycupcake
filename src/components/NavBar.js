@@ -17,8 +17,10 @@ const NavBar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="#action1">Grundrezepte</Nav.Link>
+            <Nav.Link href="#action2">Torten</Nav.Link>
+            <Nav.Link href="#action3">Kuchen</Nav.Link>
+            <Nav.Link href="#action4">anderes</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl
