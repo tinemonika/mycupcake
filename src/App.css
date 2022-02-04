@@ -13,11 +13,16 @@
   border: 1px solid blue;
 }
 
+.theOneRecipe h3 {
+  margin-top: 2.5rem;
+}
+
 .theOneRecipe ul {
   border: 1px solid rosybrown;
   list-style-type: none;
 }
 
 .theOneRecipe p {
+  margin-top: 2rem;
   border: 1px solid red;
 }

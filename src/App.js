@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import RecipeOne from "./components/RecipeOne";
 import Welcome from "./components/Welcome";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Welcome />} />
         <Route path="/:id" element={<RecipeOne />} />
       </Routes>
+      <Footer />
     </>
   );
 }

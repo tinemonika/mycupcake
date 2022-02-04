@@ -4,8 +4,20 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [search, setSearch] = useState("");
+
+  const handleInput = (e) => {
+    setSearch(e.target.value);
+    console.log("unsere Suche ist: ", search);
+  };
+
+  const handleSearch = () => {
+    //wenn der Button geklickt wird, wollen wir Rezepte angezeigt bekommen, die mit der Suche übereinstimmen
+  };
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -25,11 +37,15 @@ const NavBar = () => {
           <Form className="d-flex">
             <FormControl
               type="search"
-              placeholder="Search"
+              placeholder="Suchen"
               className="me-2"
               aria-label="Search"
+              onChange={handleInput}
+              value={search}
             />
-            <Button variant="outline-success">Search</Button>
+            <Button onClick={handleSearch} variant="outline-success">
+              Suchen
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Container>

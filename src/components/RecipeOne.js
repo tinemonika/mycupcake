@@ -2,6 +2,8 @@ import "../App.css";
 import { useState, useEffect } from "react";
 import { client } from "../client";
 import { useParams } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const RecipeOne = () => {
   const [recipe, setRecipe] = useState();
@@ -22,6 +24,9 @@ const RecipeOne = () => {
     <>
       {recipe ? (
         <div className="theOneRecipe">
+          <Link to="/">
+            <Button variant="outline-secondary">Zurück</Button>
+          </Link>
           <h1>{recipe.fields.headline}</h1>
           <img alt="img" src={recipe.fields.img.fields.file.url} />
           <h3>Zutaten:</h3>
