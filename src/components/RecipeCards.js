@@ -10,7 +10,11 @@ const RecipeCards = ({ recipes }) => {
       <div className="container">
         <div className="row">
           {recipes.map((recipe) => (
-            <Card className="col-md-2 my-1 mx-1" border="secondary">
+            <Card
+              className="col-md-2 my-1 mx-1"
+              border="secondary"
+              key={recipe.sys.id}
+            >
               <Card.Img variant="top" src={recipe.fields.img.fields.file.url} />
               <Card.Body>
                 <Card.Title>{recipe.fields.headline}</Card.Title>

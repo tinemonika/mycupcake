@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="page-footer font-small grey pt-4">
     <div className="footer-copyright text-center py-3">
       © 2022 Copyright:
-      <a href=""> gehtdichnixan.de</a>
+      <a href="tinetinchen.de"> gehtdichnixan.de</a>
     </div>
   </footer>
 );

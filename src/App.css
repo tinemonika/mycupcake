@@ -1,16 +1,20 @@
 .theOneRecipe {
-  margin: 4rem;
-  border: 1px solid;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  /*border: 1px solid;*/
 }
 
 .theOneRecipe h1 {
-  border: 1px solid green;
+  margin-top: 2rem;
+  /*border: 1px solid green;*/
 }
 
 .theOneRecipe img {
+  margin-top: 3rem;
   float: right;
   width: 25rem;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .theOneRecipe h3 {
@@ -18,11 +22,11 @@
 }
 
 .theOneRecipe ul {
-  border: 1px solid rosybrown;
+  /*border: 1px solid rosybrown;*/
   list-style-type: none;
 }
 
 .theOneRecipe p {
   margin-top: 2rem;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
