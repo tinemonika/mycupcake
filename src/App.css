@@ -1,3 +1,36 @@
+.ehm {
+  background-color: #034078;
+}
+
+.welcome h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /*border: 1px solid red;*/
+  color: #0a1128;
+}
+
+.search h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  color: #0a1128;
+}
+
+/*.btn-outline-success {
+  color: #5d2e46;
+  border-color: #5d2e46;
+}
+
+.color-nav {
+  color: #5d2e46;
+  background-color: #5d2e46;
+}
+
+.row {
+  background-color: #5d2e46;
+}*/
+
 .theOneRecipe {
   margin-top: 2rem;
   margin-left: 5rem;
@@ -29,4 +62,8 @@
 .theOneRecipe p {
   margin-top: 2rem;
   /*border: 1px solid red;*/
+}
+
+.footer {
+  background-color: #1282a2;
 }

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const RecipeCards = ({ recipes }) => {
   console.log(recipes);
   return (
-    <div className="navbar-dark">
+    <div className="color-Card">
       <div className="container">
         <div className="row">
           {recipes.map((recipe) => (

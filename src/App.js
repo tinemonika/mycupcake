@@ -9,13 +9,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/:id" element={<RecipeOne />} />
-        <Route path="suche" element={<SearchResult />} />
-      </Routes>
-      <Footer />
+      <div className="ehm">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/:id" element={<RecipeOne />} />
+          <Route path="suche" element={<SearchResult />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
