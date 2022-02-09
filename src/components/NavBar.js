@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <>
       <div className="color-nav">
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" expand="lg">
           <Container fluid>
             <Navbar.Brand href="#">Tini's Törtchen Welt</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -60,7 +60,7 @@ const NavBar = () => {
                 <Button
                   type="submit"
                   variant="outline-success"
-                  className="Button"
+                  className="Button search-button"
                 >
                   Suchen
                 </Button>

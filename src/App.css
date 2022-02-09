@@ -1,35 +1,40 @@
 .ehm {
-  background-color: #034078;
+  background-color: #80ced7;
 }
 
-.welcome h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.navbar-light .navbar-brand {
+  color: #fefcfb !important;
+}
+
+.navbar-nav a {
+  color: #fefcfb !important;
+}
+
+.btn-outline-success,
+.btn {
+  background-color: #034078 !important;
+  color: #fefcfb !important;
+  border-color: #fefcfb !important;
+}
+
+h1 {
   text-align: center;
-  /*border: 1px solid red;*/
   color: #0a1128;
 }
 
-.search h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 5rem;
-  color: #0a1128;
+.card {
+  background-color: #034078 !important;
 }
 
-/*.btn-outline-success {
-  color: #5d2e46;
-  border-color: #5d2e46;
+.card-title {
+  color: #fefcfb;
 }
 
-.color-nav {
-  color: #5d2e46;
-  background-color: #5d2e46;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.row {
-  background-color: #5d2e46;
-}*/
 
 .theOneRecipe {
   margin-top: 2rem;
@@ -65,5 +70,9 @@
 }
 
 .footer {
-  background-color: #1282a2;
+  background-color: #212529;
+}
+
+.footer-copyright {
+  color: #fefcfb;
 }

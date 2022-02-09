@@ -17,7 +17,7 @@ const Welcome = () => {
 
   return (
     <>
-      <div className="welcome">
+      <div className="welcome my-3">
         <h1>Willkommen auf Christines digitalem Rezeptbuch</h1>
         {recipes ? <RecipeCards recipes={recipes} /> : "...Loading"}
       </div>

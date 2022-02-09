@@ -26,13 +26,13 @@ const SearchResult = (search) => {
 
   return (
     <>
-      <div className="search">
+      <div className="search my-3">
         <h1>Hier sind deine Suchergebnisse:</h1>
         {/* Wenn requestedRecipes einen truthy value hat, 
       mappe über den array (requestedRecipes), andernfalls zeige "Loading" --> ternary operator */}
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           {requestedRecipes.length > 0
             ? requestedRecipes.map((recipe) => (
                 <Card
