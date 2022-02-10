@@ -10,6 +10,11 @@
   color: #fefcfb !important;
 }
 
+img,
+svg {
+  margin-top: 1rem;
+}
+
 .btn-outline-success,
 .btn {
   background-color: #034078 !important;
